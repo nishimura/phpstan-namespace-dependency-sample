@@ -1,0 +1,21 @@
+parameters:
+  level: max
+  inferPrivatePropertyTypeFromConstructor: true
+  autoload_files:
+    - vendor/autoload.php
+
+includes:
+  - vendor/nish/phpstan-namespace-dependency/rules.neon
+
+services:
+  -
+    factory: Nish\PHPStan\NsDepends\DependencyChecker([
+      'App\DomainService': ['App\ApplicationService'],
+      'App\Domain': ['App\DomainService', 'App\ApplicationService', 'App\Infrastructure'],
+      'App\ApplicationService': ['App\Presentation', 'App\Tests'],
+    ], [
+      'App\Domain\DomainException': ['Exception'],
+      'App\Domain': ['DateTimeInterface', 'DateTimeImmutable'],
+      'App\DomainService': [],
+      'App\ApplicationService': [],
+    ])
