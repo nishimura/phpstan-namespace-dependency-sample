@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c31ec3e9c54d054ffeefefe119524aee",
+    "content-hash": "836f22a4396c903d7e59f289fc4794f9",
     "packages": [
         {
             "name": "psr/http-message",
@@ -60,16 +60,16 @@
     "packages-dev": [
         {
             "name": "nish/phpstan-namespace-dependency",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nishphp/phpstan-namespace-dependency.git",
-                "reference": "68a0d1001f5b9692d73063be8224291398605066"
+                "reference": "4ad0d673c4a9728dffa0fa5da5a9dc4126072634"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nishphp/phpstan-namespace-dependency/zipball/68a0d1001f5b9692d73063be8224291398605066",
-                "reference": "68a0d1001f5b9692d73063be8224291398605066",
+                "url": "https://api.github.com/repos/nishphp/phpstan-namespace-dependency/zipball/4ad0d673c4a9728dffa0fa5da5a9dc4126072634",
+                "reference": "4ad0d673c4a9728dffa0fa5da5a9dc4126072634",
                 "shasum": ""
             },
             "require": {
@@ -102,7 +102,7 @@
                 }
             ],
             "description": "Extension of PHPStan: Namespace Dependency Rules",
-            "time": "2020-08-15T11:57:50+00:00"
+            "time": "2020-08-15T12:14:33+00:00"
         },
         {
             "name": "phpstan/phpstan",
@@ -146,9 +146,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "nish/phpstan-namespace-dependency": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

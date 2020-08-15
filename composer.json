@@ -9,6 +9,6 @@
     },
     "require-dev": {
         "phpstan/phpstan": "0.12.18",
-        "nish/phpstan-namespace-dependency": "dev-master"
+        "nish/phpstan-namespace-dependency": "0.1.0"
     }
 }
