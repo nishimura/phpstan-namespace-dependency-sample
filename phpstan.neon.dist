@@ -10,6 +10,7 @@ includes:
 services:
   -
     factory: Nish\PHPStan\NsDepends\DependencyChecker([
+      'App\Domain\Product\InternalAttributes': ['App\Domain\Product\Product'],
       'App\DomainService': ['App\ApplicationService'],
       'App\Domain': ['App\DomainService', 'App\ApplicationService', 'App\Infrastructure'],
       'App\ApplicationService': ['App\Presentation', 'App\Tests'],
