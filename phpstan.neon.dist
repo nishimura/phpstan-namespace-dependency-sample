@@ -1,8 +1,6 @@
 parameters:
   level: max
   inferPrivatePropertyTypeFromConstructor: true
-  autoload_files:
-    - vendor/autoload.php
 
 includes:
   - vendor/nish/phpstan-namespace-dependency/rules.neon
