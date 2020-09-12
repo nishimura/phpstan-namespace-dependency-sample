@@ -10,10 +10,10 @@ class ExtraProduct
     /** @var InternalAttributes */
     private $attributes;
 
-    public function __construct(ProductId $id)
+    public function __construct(ProductId $id, InternalAttributes $attrs)
     {
         $this->id = $id;
-        $this->attributes = new InternalAttributes([]);
+        $this->attributes = $attrs;
     }
     public function id(): ProductId
     {

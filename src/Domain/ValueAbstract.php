@@ -15,6 +15,7 @@ abstract class ValueAbstract
     {
         if (!$this->validate($value))
             throw new \Exception('invalid value');
+            //throw new DomainException('invalid value');
 
         $this->value = $value;
     }
